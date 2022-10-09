@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/permission_btn"
+                style="@style/TestButton"
+                android:text="权限申请" />
+
+            <Button
+                android:id="@+id/getDevice_btn"
+                style="@style/TestButton"
+                android:text="设备相关" />
+
+            <Button
+                android:id="@+id/getNetwork_btn"
+                style="@style/TestButton"
+                android:text="网络相关" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/ll_layout1">
+
+            <Button
+                android:id="@+id/app_btn"
+                style="@style/TestButton"
+                android:text="APP相关" />
+
+            <Button
+                android:id="@+id/clean_btn"
+                style="@style/TestButton"
+                android:text="存储清除" />
+
+            <Button
+                android:id="@+id/encrypt_btn"
+                style="@style/TestButton"
+                android:text="加密解密" />
+
+            <Button
+                android:id="@+id/encode_btn"
+                style="@style/TestButton"
+                android:text="编码解码" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/testshow_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这是测试输出"
+            app:layout_constraintTop_toBottomOf="@+id/ll_layout2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

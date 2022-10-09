@@ -1,0 +1,3 @@
+include ':commoncore'
+include ':app'
+rootProject.name = "CommonDemo"
